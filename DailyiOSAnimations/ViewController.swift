@@ -8,10 +8,18 @@
 
 import UIKit
 
+struct Model {
+
+    let name: String
+    let viewController: UIViewController
+}
+
 class ViewController: UIViewController {
 
     let tableView = UITableView()
-    let model = ["Day1"]
+    let models: [Model] = [
+        Model(name: "Day1", viewController: Day1ViewController())
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,18 +39,26 @@ extension ViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = model[indexPath.row]
+        cell.textLabel?.text = models[indexPath.row].name
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.count
+        return models.count
     }
 }
 
 extension ViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("didSelectRowAt:", indexPath)
+
+        let model = models[indexPath.row]
+        let vc = model.viewController
+        vc.title = model.name
+        self.navigationController?.pushViewController(vc, animated: true)
+
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.isSelected = false
     }
 }

@@ -12,6 +12,7 @@
 		D46BD93E20EDFDE900B2C176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46BD93C20EDFDE900B2C176 /* Main.storyboard */; };
 		D46BD94020EDFDEB00B2C176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46BD93F20EDFDEB00B2C176 /* Assets.xcassets */; };
 		D46BD94320EDFDEB00B2C176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46BD94120EDFDEB00B2C176 /* LaunchScreen.storyboard */; };
+		D46BD94B20EE433B00B2C176 /* Day1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BD94A20EE433B00B2C176 /* Day1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D46BD93F20EDFDEB00B2C176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D46BD94220EDFDEB00B2C176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D46BD94420EDFDEB00B2C176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D46BD94A20EE433B00B2C176 /* Day1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				D46BD93820EDFDE900B2C176 /* AppDelegate.swift */,
 				D46BD93A20EDFDE900B2C176 /* ViewController.swift */,
+				D46BD94A20EE433B00B2C176 /* Day1ViewController.swift */,
 				D46BD93C20EDFDE900B2C176 /* Main.storyboard */,
 				D46BD93F20EDFDEB00B2C176 /* Assets.xcassets */,
 				D46BD94120EDFDEB00B2C176 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D46BD93B20EDFDE900B2C176 /* ViewController.swift in Sources */,
+				D46BD94B20EE433B00B2C176 /* Day1ViewController.swift in Sources */,
 				D46BD93920EDFDE900B2C176 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +285,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64T4PJ8WCZ;
 				INFOPLIST_FILE = DailyiOSAnimations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64T4PJ8WCZ;
 				INFOPLIST_FILE = DailyiOSAnimations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

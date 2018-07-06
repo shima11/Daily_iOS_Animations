@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D43C776720EEFC5700457EEC /* Day2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C776620EEFC5700457EEC /* Day2ViewController.swift */; };
 		D46BD93920EDFDE900B2C176 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BD93820EDFDE900B2C176 /* AppDelegate.swift */; };
 		D46BD93B20EDFDE900B2C176 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BD93A20EDFDE900B2C176 /* ViewController.swift */; };
 		D46BD93E20EDFDE900B2C176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46BD93C20EDFDE900B2C176 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D43C776620EEFC5700457EEC /* Day2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2ViewController.swift; sourceTree = "<group>"; };
 		D46BD93520EDFDE900B2C176 /* DailyiOSAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyiOSAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46BD93820EDFDE900B2C176 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D46BD93A20EDFDE900B2C176 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				D46BD93820EDFDE900B2C176 /* AppDelegate.swift */,
 				D46BD93A20EDFDE900B2C176 /* ViewController.swift */,
 				D46BD94A20EE433B00B2C176 /* Day1ViewController.swift */,
+				D43C776620EEFC5700457EEC /* Day2ViewController.swift */,
 				D46BD93C20EDFDE900B2C176 /* Main.storyboard */,
 				D46BD93F20EDFDEB00B2C176 /* Assets.xcassets */,
 				D46BD94120EDFDEB00B2C176 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				D46BD93B20EDFDE900B2C176 /* ViewController.swift in Sources */,
 				D46BD94B20EE433B00B2C176 /* Day1ViewController.swift in Sources */,
+				D43C776720EEFC5700457EEC /* Day2ViewController.swift in Sources */,
 				D46BD93920EDFDE900B2C176 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

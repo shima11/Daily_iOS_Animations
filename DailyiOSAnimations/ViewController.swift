@@ -9,16 +9,16 @@
 import UIKit
 
 struct Model {
-
     let name: String
-    let viewController: UIViewController
+    let identifier: String
 }
 
 class ViewController: UIViewController {
 
     let tableView = UITableView()
+    
     let models: [Model] = [
-        Model(name: "Day1", viewController: Day1ViewController())
+        Model(name: "Day1", identifier: String(describing: Day1ViewController.self))
     ]
 
     override func viewDidLoad() {
@@ -54,7 +54,8 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         let model = models[indexPath.row]
-        let vc = model.viewController
+        let storyboard = UIStoryboard(name: model.identifier, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: model.identifier)
         vc.title = model.name
         self.navigationController?.pushViewController(vc, animated: true)
 

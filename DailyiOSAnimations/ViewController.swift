@@ -9,8 +9,9 @@
 import UIKit
 
 struct Model {
+    
     let name: String
-    let identifier: String
+    let viewController: UIViewController
 }
 
 class ViewController: UIViewController {
@@ -18,7 +19,9 @@ class ViewController: UIViewController {
     let tableView = UITableView()
     
     let models: [Model] = [
-        Model(name: "Day1", identifier: String(describing: Day1ViewController.self))
+        Model(name: "Day1", viewController: Day1ViewController()),
+        Model(name: "Day2", viewController: Day2ViewController()),
+        Model(name: "Day3", viewController: Day3ViewController()),
     ]
 
     override func viewDidLoad() {
@@ -54,8 +57,7 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         let model = models[indexPath.row]
-        let storyboard = UIStoryboard(name: model.identifier, bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: model.identifier)
+        let vc = model.viewController
         vc.title = model.name
         self.navigationController?.pushViewController(vc, animated: true)
 

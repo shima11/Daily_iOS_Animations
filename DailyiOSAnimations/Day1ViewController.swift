@@ -10,8 +10,8 @@ import UIKit
 
 class Day1ViewController: UIViewController {
     
-    @IBOutlet weak var targetView: UIView!
-    @IBOutlet weak var button: UIButton!
+    var targetView = UIView()
+    var button = UIButton()
     
     private var isPause: Bool = true
     
@@ -20,16 +20,12 @@ class Day1ViewController: UIViewController {
 
         view.backgroundColor = .white
         
-//        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.panEvent(_:)))
-//        targetView.addGestureRecognizer(panGesture)
-        
-        targetView.layer.speed = 0
-        targetView.layer.duration = 1
-        targetView.layer.timeOffset = 0
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.panEvent(_:)))
+        targetView.addGestureRecognizer(panGesture)
         
     }
 
-    @IBAction func didTapStartPause(_ sender: Any) {
+    func didTapStartPause(_ sender: Any) {
 
         if isPause {
             button.setTitle("Pause", for: .normal)
@@ -39,14 +35,14 @@ class Day1ViewController: UIViewController {
         isPause = !isPause
     }
     
-//    @objc func panEvent(_ sender: UIPanGestureRecognizer) {
-//
-//        let translation = sender.translation(in: view)
-//        sender.view!.center = CGPoint(
-//            x: sender.view!.center.x + translation.x,
-//            y: sender.view!.center.y + translation.y
-//        )
-//        sender.setTranslation(.zero, in: view)
-//    }
+    @objc func panEvent(_ sender: UIPanGestureRecognizer) {
+
+        let translation = sender.translation(in: view)
+        sender.view!.center = CGPoint(
+            x: sender.view!.center.x + translation.x,
+            y: sender.view!.center.y + translation.y
+        )
+        sender.setTranslation(.zero, in: view)
+    }
     
 }

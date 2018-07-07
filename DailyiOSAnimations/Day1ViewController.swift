@@ -11,7 +11,6 @@ import UIKit
 class Day1ViewController: UIViewController {
     
     var targetView = UIView()
-    var button = UIButton()
     
     private var isPause: Bool = true
     
@@ -19,29 +18,31 @@ class Day1ViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .white
-        
+
+        targetView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        targetView.center = view.center
+        targetView.backgroundColor = UIColor.lightGray
+
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.panEvent(_:)))
         targetView.addGestureRecognizer(panGesture)
-        
-    }
 
-    func didTapStartPause(_ sender: Any) {
-
-        if isPause {
-            button.setTitle("Pause", for: .normal)
-        } else {
-            button.setTitle("Start", for: .normal)
-        }
-        isPause = !isPause
+        view.addSubview(targetView)
     }
     
     @objc func panEvent(_ sender: UIPanGestureRecognizer) {
 
+        guard let targetView = sender.view else { return }
+        
         let translation = sender.translation(in: view)
-        sender.view!.center = CGPoint(
-            x: sender.view!.center.x + translation.x,
-            y: sender.view!.center.y + translation.y
+        let velocity = sender.velocity(in: view)
+        
+        print(translation, velocity)
+        
+        targetView.center = CGPoint(
+            x: targetView.center.x + translation.x,
+            y: targetView.center.y + translation.y
         )
+        
         sender.setTranslation(.zero, in: view)
     }
     

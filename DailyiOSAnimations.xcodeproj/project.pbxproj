@@ -10,6 +10,7 @@
 		CA6D6E2894277551750279BA /* Pods_DailyiOSAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D7D6F9B72A9EF5E6399DFE /* Pods_DailyiOSAnimations.framework */; };
 		D43C776720EEFC5700457EEC /* Day2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C776620EEFC5700457EEC /* Day2ViewController.swift */; };
 		D46643CC20EF828500714039 /* Day3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46643CB20EF828500714039 /* Day3ViewController.swift */; };
+		D46643CE20F0BA5200714039 /* Day4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46643CD20F0BA5200714039 /* Day4ViewController.swift */; };
 		D46BD93920EDFDE900B2C176 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BD93820EDFDE900B2C176 /* AppDelegate.swift */; };
 		D46BD93B20EDFDE900B2C176 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BD93A20EDFDE900B2C176 /* ViewController.swift */; };
 		D46BD94020EDFDEB00B2C176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46BD93F20EDFDEB00B2C176 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		B6D7D6F9B72A9EF5E6399DFE /* Pods_DailyiOSAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyiOSAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43C776620EEFC5700457EEC /* Day2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2ViewController.swift; sourceTree = "<group>"; };
 		D46643CB20EF828500714039 /* Day3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day3ViewController.swift; sourceTree = "<group>"; };
+		D46643CD20F0BA5200714039 /* Day4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4ViewController.swift; sourceTree = "<group>"; };
 		D46BD93520EDFDE900B2C176 /* DailyiOSAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyiOSAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46BD93820EDFDE900B2C176 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D46BD93A20EDFDE900B2C176 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				D46BD94A20EE433B00B2C176 /* Day1ViewController.swift */,
 				D43C776620EEFC5700457EEC /* Day2ViewController.swift */,
 				D46643CB20EF828500714039 /* Day3ViewController.swift */,
+				D46643CD20F0BA5200714039 /* Day4ViewController.swift */,
 				D46BD93F20EDFDEB00B2C176 /* Assets.xcassets */,
 				D46BD94120EDFDEB00B2C176 /* LaunchScreen.storyboard */,
 				D46BD94420EDFDEB00B2C176 /* Info.plist */,
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D46643CE20F0BA5200714039 /* Day4ViewController.swift in Sources */,
 				D46BD93B20EDFDE900B2C176 /* ViewController.swift in Sources */,
 				D46BD94B20EE433B00B2C176 /* Day1ViewController.swift in Sources */,
 				D43C776720EEFC5700457EEC /* Day2ViewController.swift in Sources */,

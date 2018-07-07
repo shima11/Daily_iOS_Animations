@@ -31,7 +31,12 @@ class Day1ViewController: UIViewController {
     
     @objc func panEvent(_ sender: UIPanGestureRecognizer) {
 
-        guard let targetView = sender.view else { return }
+        guard
+            let targetView = sender.view,
+            let view = sender.view?.superview
+            else {
+                return
+        }
         
         let translation = sender.translation(in: view)
         let velocity = sender.velocity(in: view)

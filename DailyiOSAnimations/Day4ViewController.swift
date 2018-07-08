@@ -19,15 +19,6 @@ class Day4ViewController: UIViewController {
     let smallFont = UIFont.systemFont(ofSize: 20, weight: .bold)
     let largeFont = UIFont.systemFont(ofSize: 80, weight: .bold)
 
-    var scale: CGFloat {
-        return smallFont.capHeight / largeFont.capHeight
-    }
-
-    var smallTrasform: CGAffineTransform {
-        return CGAffineTransform(scaleX: scale, y: scale)
-    }
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,15 +27,13 @@ class Day4ViewController: UIViewController {
         let label = UILabel()
 
         label.text = "Tap Me"
-        label.font = largeFont
+        label.font = smallFont
         label.center = view.center
         label.bounds.size = label.intrinsicContentSize
         label.isUserInteractionEnabled = true
 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapEvent(_:)))
         label.addGestureRecognizer(tapGesture)
-
-        label.transform = smallTrasform
 
         view.addSubview(label)
 
@@ -53,34 +42,82 @@ class Day4ViewController: UIViewController {
 
     @objc func tapEvent(_ sender: UITapGestureRecognizer) {
 
-        guard let label = sender.view else { return }
+        guard let label = sender.view as? UILabel else { return }
 
         switch state {
-        case .shrink:
-            UIView.animate(
-                withDuration: 0.2,
-                delay: 0,
-                options: [UIViewAnimationOptions.curveEaseInOut, UIViewAnimationOptions.allowUserInteraction],
-                animations: {
-                    label.transform = .identity
-            },
-                completion: nil
-            )
-            self.state = .expand
-
         case .expand:
+
+            let copy = copyLabel(source: label)
+            copy.font = smallFont
+
+            let transform = scaleTransform(
+                from: label.bounds.size,
+                to: copy.intrinsicContentSize
+            )
+
             UIView.animate(
-                withDuration: 0.2,
+                withDuration: 0.6,
                 delay: 0,
-                options: [UIViewAnimationOptions.curveEaseInOut, UIViewAnimationOptions.allowUserInteraction],
+                options: [
+                    UIViewAnimationOptions.curveEaseInOut,
+                    UIViewAnimationOptions.allowUserInteraction,
+                ],
                 animations: {
-                    label.transform = self.smallTrasform
+                    label.transform = transform
             },
-                completion: nil
+                completion: { _ in
+                    label.font = self.smallFont
+                    label.transform = .identity
+                    label.bounds.size = label.intrinsicContentSize
+            }
             )
             self.state = .shrink
 
+        case .shrink:
+
+            let copy = copyLabel(source: label)
+            copy.font = largeFont
+
+            let transform = scaleTransform(
+                from: label.bounds.size,
+                to: copy.intrinsicContentSize
+            )
+
+            UIView.animate(
+                withDuration: 0.6,
+                delay: 0,
+                options: [
+                    UIViewAnimationOptions.curveEaseInOut,
+                    UIViewAnimationOptions.allowUserInteraction,
+                ],
+                animations: {
+                    label.transform = transform
+            },
+                completion: { _ in
+                    label.font = self.largeFont
+                    label.transform = .identity
+                    label.bounds.size = copy.intrinsicContentSize
+            }
+            )
+            self.state = .expand
+
         }
 
+    }
+
+    func copyLabel(source: UILabel) -> UILabel {
+
+        let label = UILabel()
+        label.frame = source.frame
+        label.font = source.font
+        label.text = source.text
+        return label
+    }
+
+    func scaleTransform(from: CGSize, to: CGSize) -> CGAffineTransform {
+
+        let scaleX = to.width / from.width
+        let scaleY = to.height / from.height
+        return CGAffineTransform(scaleX: scaleX, y: scaleY)
     }
 }

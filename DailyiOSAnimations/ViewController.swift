@@ -23,12 +23,18 @@ class ViewController: UIViewController {
         Model(name: "Day2", viewController: Day2ViewController()),
         Model(name: "Day3", viewController: Day3ViewController()),
         Model(name: "Day4", viewController: Day4ViewController()),
+        Model(name: "Day5", viewController: Day5ViewController()),
+        Model(name: "Day6", viewController: Day6ViewController()),
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Daily iOS Animations"
+
+//        if #available(iOS 11.0, *) {
+//            navigationController?.navigationBar.prefersLargeTitles = true
+//        }
 
         tableView.delegate = self
         tableView.dataSource = self

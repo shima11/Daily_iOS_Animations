@@ -18,6 +18,7 @@
 		D46BD94320EDFDEB00B2C176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46BD94120EDFDEB00B2C176 /* LaunchScreen.storyboard */; };
 		D46BD94B20EE433B00B2C176 /* Day1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BD94A20EE433B00B2C176 /* Day1ViewController.swift */; };
 		D4A9B17F20F3BD84006E8AF1 /* Day6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A9B17E20F3BD84006E8AF1 /* Day6ViewController.swift */; };
+		D4A9B18220F510F5006E8AF1 /* Day7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A9B18120F510F5006E8AF1 /* Day7ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D46BD94420EDFDEB00B2C176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D46BD94A20EE433B00B2C176 /* Day1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1ViewController.swift; sourceTree = "<group>"; };
 		D4A9B17E20F3BD84006E8AF1 /* Day6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day6ViewController.swift; sourceTree = "<group>"; };
+		D4A9B18120F510F5006E8AF1 /* Day7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				D46643CD20F0BA5200714039 /* Day4ViewController.swift */,
 				D46643D020F217D900714039 /* Day5ViewController.swift */,
 				D4A9B17E20F3BD84006E8AF1 /* Day6ViewController.swift */,
+				D4A9B18120F510F5006E8AF1 /* Day7ViewController.swift */,
 				D46BD93F20EDFDEB00B2C176 /* Assets.xcassets */,
 				D46BD94120EDFDEB00B2C176 /* LaunchScreen.storyboard */,
 				D46BD94420EDFDEB00B2C176 /* Info.plist */,
@@ -216,6 +219,7 @@
 			files = (
 				D46643CE20F0BA5200714039 /* Day4ViewController.swift in Sources */,
 				D46BD93B20EDFDE900B2C176 /* ViewController.swift in Sources */,
+				D4A9B18220F510F5006E8AF1 /* Day7ViewController.swift in Sources */,
 				D46BD94B20EE433B00B2C176 /* Day1ViewController.swift in Sources */,
 				D43C776720EEFC5700457EEC /* Day2ViewController.swift in Sources */,
 				D46643D120F217D900714039 /* Day5ViewController.swift in Sources */,

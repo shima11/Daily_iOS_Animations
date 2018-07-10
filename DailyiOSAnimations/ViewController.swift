@@ -25,7 +25,8 @@ class ViewController: UIViewController {
         Model(name: "Day4", viewController: Day4ViewController()),
         Model(name: "Day5", viewController: Day5ViewController()),
         Model(name: "Day6", viewController: Day6ViewController()),
-    ]
+        Model(name: "Day7", viewController: Day7ViewController()),
+        ]
 
     override func viewDidLoad() {
         super.viewDidLoad()

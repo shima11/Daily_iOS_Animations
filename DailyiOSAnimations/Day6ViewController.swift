@@ -17,24 +17,22 @@ class Day6ViewController: UIViewController {
 
         view.backgroundColor = .white
 
-        targetView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        targetView.frame = CGRect(x: 0, y: 0, width: 60, height: 60)
         targetView.center = view.center
         targetView.backgroundColor = UIColor.lightGray
         view.addSubview(targetView)
 
-//        CABasicAnimation* animation = [CABasicAnimation animationWithKeyPath:@"transform"];
-//        animation.duration = 0.5;
-//        animation.repeatCount = 1;
-//        animation.autoreverses = YES;
-//        CATransform3D transform = CATransform3DMakeRotation(M_PI, 0.0, 1.0, 0.0);
-//        animation.toValue = [NSNumber valueWithCATransform3D:transform];
-//        [rotationLabel.layer addAnimation:animation forKey:@"transform"];
-
-        let animation = CABasicAnimation(keyPath: "transform")
+        let animation = CASpringAnimation(keyPath: "position")
         animation.duration = 1
         animation.repeatCount = .infinity
-        let transform = CATransform3DMakeRotation(CGFloat(Double.pi), 0, 1.0, 0)
-        animation.toValue = transform
+        animation.autoreverses = true
+        animation.fromValue = CGPoint(x: targetView.center.x - 100, y: targetView.center.y)
+        animation.toValue = CGPoint(x: targetView.center.x + 100, y: targetView.center.y)
+        animation.damping = 4
+        animation.initialVelocity = 2
+        animation.mass = 2
+        animation.stiffness = 8
+
         targetView.layer.add(animation, forKey: "transform")
     }
 }

@@ -20,13 +20,13 @@ class ViewController: UIViewController {
     let tableView = UITableView()
     
     let models: [Model] = [
-        Model(name: "Day1", subTitle: "", viewController: Day1ViewController()),
-        Model(name: "Day2", subTitle: "", viewController: Day2ViewController()),
-        Model(name: "Day3", subTitle: "", viewController: Day3ViewController()),
-        Model(name: "Day4", subTitle: "", viewController: Day4ViewController()),
-        Model(name: "Day5", subTitle: "", viewController: Day5ViewController()),
-        Model(name: "Day6", subTitle: "", viewController: Day6ViewController()),
-        Model(name: "Day7", subTitle: "", viewController: Day7ViewController()),
+        Model(name: "Day1", subTitle: "UIPanGestureRecognizer", viewController: Day1ViewController()),
+        Model(name: "Day2", subTitle: "CALayer fractionComplete", viewController: Day2ViewController()),
+        Model(name: "Day3", subTitle: "CALayer pause and resume", viewController: Day3ViewController()),
+        Model(name: "Day4", subTitle: "Scale animation for UILabel", viewController: Day4ViewController()),
+        Model(name: "Day5", subTitle: "CAReplicatorLayer", viewController: Day5ViewController()),
+        Model(name: "Day6", subTitle: "CASpringAnimation", viewController: Day6ViewController()),
+        Model(name: "Day7", subTitle: "UIDynamicAnimator", viewController: Day7ViewController()),
         ]
 
     override func viewDidLoad() {

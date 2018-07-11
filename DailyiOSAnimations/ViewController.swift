@@ -11,6 +11,7 @@ import UIKit
 struct Model {
     
     let name: String
+    let subTitle: String
     let viewController: UIViewController
 }
 
@@ -19,13 +20,13 @@ class ViewController: UIViewController {
     let tableView = UITableView()
     
     let models: [Model] = [
-        Model(name: "Day1", viewController: Day1ViewController()),
-        Model(name: "Day2", viewController: Day2ViewController()),
-        Model(name: "Day3", viewController: Day3ViewController()),
-        Model(name: "Day4", viewController: Day4ViewController()),
-        Model(name: "Day5", viewController: Day5ViewController()),
-        Model(name: "Day6", viewController: Day6ViewController()),
-        Model(name: "Day7", viewController: Day7ViewController()),
+        Model(name: "Day1", subTitle: "", viewController: Day1ViewController()),
+        Model(name: "Day2", subTitle: "", viewController: Day2ViewController()),
+        Model(name: "Day3", subTitle: "", viewController: Day3ViewController()),
+        Model(name: "Day4", subTitle: "", viewController: Day4ViewController()),
+        Model(name: "Day5", subTitle: "", viewController: Day5ViewController()),
+        Model(name: "Day6", subTitle: "", viewController: Day6ViewController()),
+        Model(name: "Day7", subTitle: "", viewController: Day7ViewController()),
         ]
 
     override func viewDidLoad() {
@@ -49,6 +50,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = models[indexPath.row].name
         cell.accessoryType = .disclosureIndicator

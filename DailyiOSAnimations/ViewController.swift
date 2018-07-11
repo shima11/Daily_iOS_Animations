@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         Model(name: "Day5", subTitle: "CAReplicatorLayer", viewController: Day5ViewController()),
         Model(name: "Day6", subTitle: "CASpringAnimation", viewController: Day6ViewController()),
         Model(name: "Day7", subTitle: "UIDynamicAnimator", viewController: Day7ViewController()),
+        Model(name: "Day8", subTitle: "Force Touch Gesture", viewController: Day8ViewController()),
         ]
 
     override func viewDidLoad() {

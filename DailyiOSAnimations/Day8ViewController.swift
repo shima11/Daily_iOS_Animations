@@ -41,8 +41,8 @@ class Day8ViewController: UIViewController {
         
         switch sender.state {
         case .began:
-            
-            scaleAnimator = UIViewPropertyAnimator(duration: 0.3, curve: UIView.AnimationCurve.easeInOut, animations: {
+
+            scaleAnimator = UIViewPropertyAnimator(duration: 0.3, curve: UIViewAnimationCurve.easeInOut, animations: {
                 self.controlButtonView.transform = CGAffineTransform(scaleX: 2.0, y: 2.0)
             })
             scaleAnimator.addCompletion { _ in
@@ -74,7 +74,7 @@ class Day8ViewController: UIViewController {
     
 }
 
-class ForceTouchGestureRecognizer: UIGestureRecognizer {
+class ForceTouchGestureRecognizer: UIGestureRecognizer, UIGestureRecognizerDelegate {
     
     var forceValue: CGFloat = 0.0
     var maximumForceValue: CGFloat = 0.0
@@ -82,42 +82,42 @@ class ForceTouchGestureRecognizer: UIGestureRecognizer {
     var progress: CGFloat {
         return forceValue / maximumForceValue
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {
-        super.touchesBegan(touches, with: event)
-        self.state = .began
-        forceTouch(touches: touches)
-    }
 
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent) {
-        super.touchesMoved(touches, with: event)
-        self.state = .changed
-        forceTouch(touches: touches)
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent) {
-        super.touchesEnded(touches, with: event)
-        self.state = .ended
-        forceTouch(touches: touches)
-    }
-    
-    private func forceTouch(touches: Set<UITouch>) {
-        
-        guard (touches.count == 1), let touch = touches.first else {
-            state = .failed
-            return
-        }
-        
-        forceValue = touch.force
-        maximumForceValue = touch.maximumPossibleForce
-        
-        print(forceValue, maximumForceValue, progress)
-    }
-    
-    override func reset() {
-        super.reset()
-        forceValue = 0.0
-        maximumForceValue = 0.0
-    }
-    
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {
+//        super.touchesBegan(touches, with: event)
+//        self.state = .began
+//        forceTouch(touches: touches)
+//    }
+//
+//    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent) {
+//        super.touchesMoved(touches, with: event)
+//        self.state = .changed
+//        forceTouch(touches: touches)
+//    }
+//
+//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent) {
+//        super.touchesEnded(touches, with: event)
+//        self.state = .ended
+//        forceTouch(touches: touches)
+//    }
+//
+//    private func forceTouch(touches: Set<UITouch>) {
+//
+//        guard (touches.count == 1), let touch = touches.first else {
+//            state = .failed
+//            return
+//        }
+//
+//        forceValue = touch.force
+//        maximumForceValue = touch.maximumPossibleForce
+//
+//        print(forceValue, maximumForceValue, progress)
+//    }
+//
+//    override func reset() {
+//        super.reset()
+//        forceValue = 0.0
+//        maximumForceValue = 0.0
+//    }
+
 }

@@ -13,6 +13,8 @@ class Day8ViewController: UIViewController {
     
     let controlButtonView = UIView()
     
+    var scaleAnimator: UIViewPropertyAnimator!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,19 +41,33 @@ class Day8ViewController: UIViewController {
         
         switch sender.state {
         case .began:
-            break
+            
+            scaleAnimator = UIViewPropertyAnimator(duration: 0.3, curve: UIView.AnimationCurve.easeInOut, animations: {
+                self.controlButtonView.transform = CGAffineTransform(scaleX: 2.0, y: 2.0)
+            })
+            scaleAnimator.addCompletion { _ in
+                self.controlButtonView.transform = .identity
+            }
+            scaleAnimator.startAnimation()
+            scaleAnimator.pauseAnimation()
             
         case .changed:
-            break
+            
+            scaleAnimator.fractionComplete = sender.progress
             
         case .ended:
-            break
+            
+            scaleAnimator.stopAnimation(true)
+
             
         case .cancelled, .failed:
-            break
+            
+            scaleAnimator.stopAnimation(true)
             
         default:
-            break
+            
+            scaleAnimator.stopAnimation(true)
+
         }
         
     }
@@ -69,16 +85,19 @@ class ForceTouchGestureRecognizer: UIGestureRecognizer {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {
         super.touchesBegan(touches, with: event)
+        self.state = .began
         forceTouch(touches: touches)
     }
-    
+
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent) {
         super.touchesMoved(touches, with: event)
+        self.state = .changed
         forceTouch(touches: touches)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent) {
         super.touchesEnded(touches, with: event)
+        self.state = .ended
         forceTouch(touches: touches)
     }
     

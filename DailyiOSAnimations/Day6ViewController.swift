@@ -10,14 +10,13 @@ import UIKit
 
 class Day6ViewController: UIViewController {
 
-    let targetView = UIView()
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .white
 
-        targetView.frame = CGRect(x: 0, y: 0, width: 60, height: 60)
+        let targetView = UIView()
+        targetView.frame = CGRect(x: 0, y: 0, width: 120, height: 120)
         targetView.center = view.center
         targetView.backgroundColor = UIColor.lightGray
         view.addSubview(targetView)

@@ -10,7 +10,6 @@ import UIKit
 
 class Day7ViewController: UIViewController {
 
-    var targetView: UIView!
     var animator: UIDynamicAnimator!
     var behavior: UIDynamicBehavior!
 
@@ -19,7 +18,7 @@ class Day7ViewController: UIViewController {
 
         view.backgroundColor = .white
 
-        targetView = UIView()
+        let targetView = UIView()
         targetView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         targetView.center = view.center
         targetView.backgroundColor = .lightGray
@@ -32,7 +31,15 @@ class Day7ViewController: UIViewController {
         animator = UIDynamicAnimator(referenceView: view)
         behavior = UISnapBehavior(item: targetView, snapTo: targetView.center)
         animator.addBehavior(behavior)
-        
+
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 120, height: 30))
+        label.textAlignment = .center
+        label.text = "Drag Me"
+        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        label.textColor = .darkGray
+        label.center = CGPoint(x: targetView.bounds.width / 2, y: targetView.bounds.height / 2)
+        targetView.addSubview(label)
+
     }
 
     @objc func panEvent(_ sender: UIPanGestureRecognizer) {

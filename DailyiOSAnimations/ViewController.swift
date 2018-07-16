@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         Model(name: "Day8", subTitle: "Force Touch Gesture", viewController: Day8ViewController()),
         Model(name: "Day9", subTitle: "Reverse Animation", viewController: Day9ViewController()),
         Model(name: "Day10", subTitle: "CGPath", viewController: Day10ViewController()),
-        Model(name: "Day11", subTitle: "", viewController: Day11ViewController()),
+        Model(name: "Day11", subTitle: "UIBezierPath", viewController: Day11ViewController()),
         ]
 
     override func viewDidLoad() {

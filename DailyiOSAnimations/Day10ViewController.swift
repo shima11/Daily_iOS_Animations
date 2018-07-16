@@ -39,19 +39,6 @@ class Day10ViewController: UIViewController {
         path.move(to: startPoint)
         path.addQuadCurve(to: endPoint, control: midPoint)
 
-//        let bezierPath = UIBezierPath()
-        
-//        let path = UIBezierPath(
-//            arcCenter: CGPoint(
-//                x: (endPoint.x - startPoint.x) / 2,
-//                y: (endPoint.y - startPoint.y) / 2
-//            ),
-//            radius: 10,
-//            startAngle: 0.9,
-//            endAngle: 0.1,
-//            clockwise: true
-//        )
-
         let animation = CAKeyframeAnimation(keyPath: "position")
         animation.duration = 1.0
         animation.fillMode = kCAFillModeForwards
@@ -62,6 +49,3 @@ class Day10ViewController: UIViewController {
     }
 
 }
-
-
-

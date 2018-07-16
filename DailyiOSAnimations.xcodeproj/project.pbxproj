@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CA6D6E2894277551750279BA /* Pods_DailyiOSAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D7D6F9B72A9EF5E6399DFE /* Pods_DailyiOSAnimations.framework */; };
 		D416CEEA20FCCFA600BD4D31 /* Day11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D416CEE920FCCFA600BD4D31 /* Day11ViewController.swift */; };
+		D416CEEC20FCE30000BD4D31 /* Day12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D416CEEB20FCE30000BD4D31 /* Day12ViewController.swift */; };
 		D43C4F4B20F8C7ED009A3C05 /* Day10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C4F4A20F8C7ED009A3C05 /* Day10ViewController.swift */; };
 		D43C776720EEFC5700457EEC /* Day2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C776620EEFC5700457EEC /* Day2ViewController.swift */; };
 		D46643CC20EF828500714039 /* Day3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46643CB20EF828500714039 /* Day3ViewController.swift */; };
@@ -30,6 +31,7 @@
 		A330056D8345C5886322EB57 /* Pods-DailyiOSAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyiOSAnimations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyiOSAnimations/Pods-DailyiOSAnimations.debug.xcconfig"; sourceTree = "<group>"; };
 		B6D7D6F9B72A9EF5E6399DFE /* Pods_DailyiOSAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyiOSAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D416CEE920FCCFA600BD4D31 /* Day11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11ViewController.swift; sourceTree = "<group>"; };
+		D416CEEB20FCE30000BD4D31 /* Day12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day12ViewController.swift; sourceTree = "<group>"; };
 		D43C4F4A20F8C7ED009A3C05 /* Day10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10ViewController.swift; sourceTree = "<group>"; };
 		D43C776620EEFC5700457EEC /* Day2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2ViewController.swift; sourceTree = "<group>"; };
 		D46643CB20EF828500714039 /* Day3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day3ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				D4A9B1AD20F75624006E8AF1 /* Day9ViewController.swift */,
 				D43C4F4A20F8C7ED009A3C05 /* Day10ViewController.swift */,
 				D416CEE920FCCFA600BD4D31 /* Day11ViewController.swift */,
+				D416CEEB20FCE30000BD4D31 /* Day12ViewController.swift */,
 				D46BD93F20EDFDEB00B2C176 /* Assets.xcassets */,
 				D46BD94120EDFDEB00B2C176 /* LaunchScreen.storyboard */,
 				D46BD94420EDFDEB00B2C176 /* Info.plist */,
@@ -233,6 +236,7 @@
 				D46643CE20F0BA5200714039 /* Day4ViewController.swift in Sources */,
 				D43C4F4B20F8C7ED009A3C05 /* Day10ViewController.swift in Sources */,
 				D46BD93B20EDFDE900B2C176 /* ViewController.swift in Sources */,
+				D416CEEC20FCE30000BD4D31 /* Day12ViewController.swift in Sources */,
 				D472444420F65E3E001D4DEC /* Day8ViewController.swift in Sources */,
 				D4A9B18220F510F5006E8AF1 /* Day7ViewController.swift in Sources */,
 				D46BD94B20EE433B00B2C176 /* Day1ViewController.swift in Sources */,

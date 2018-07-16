@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         Model(name: "Day8", subTitle: "Force Touch Gesture", viewController: Day8ViewController()),
         Model(name: "Day9", subTitle: "Reverse Animation", viewController: Day9ViewController()),
         Model(name: "Day10", subTitle: "CGPath", viewController: Day10ViewController()),
+        Model(name: "Day11", subTitle: "", viewController: Day11ViewController()),
         ]
 
     override func viewDidLoad() {
@@ -74,8 +75,10 @@ extension ViewController: UITableViewDelegate {
         let model = models[indexPath.row]
         let vc = model.viewController
         vc.title = model.name
+        vc.navigationItem.prompt = model.subTitle
+        
         self.navigationController?.pushViewController(vc, animated: true)
-
+        
         let cell = tableView.cellForRow(at: indexPath)
         cell?.isSelected = false
     }

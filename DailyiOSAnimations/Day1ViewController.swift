@@ -33,7 +33,7 @@ class Day1ViewController: UIViewController {
 
         guard
             let targetView = sender.view,
-            let view = sender.view?.superview
+            let view = targetView.superview
             else {
                 return
         }

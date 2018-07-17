@@ -24,6 +24,7 @@
 		D4A9B17F20F3BD84006E8AF1 /* Day6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A9B17E20F3BD84006E8AF1 /* Day6ViewController.swift */; };
 		D4A9B18220F510F5006E8AF1 /* Day7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A9B18120F510F5006E8AF1 /* Day7ViewController.swift */; };
 		D4A9B1AE20F75624006E8AF1 /* Day9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A9B1AD20F75624006E8AF1 /* Day9ViewController.swift */; };
+		D4CA00CE20FEB41F00BAA39C /* Day14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA00CD20FEB41E00BAA39C /* Day14ViewController.swift */; };
 		D4DB688220FE114E000512B3 /* Day13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB688120FE114E000512B3 /* Day13ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		D4A9B17E20F3BD84006E8AF1 /* Day6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day6ViewController.swift; sourceTree = "<group>"; };
 		D4A9B18120F510F5006E8AF1 /* Day7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7ViewController.swift; sourceTree = "<group>"; };
 		D4A9B1AD20F75624006E8AF1 /* Day9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day9ViewController.swift; sourceTree = "<group>"; };
+		D4CA00CD20FEB41E00BAA39C /* Day14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14ViewController.swift; sourceTree = "<group>"; };
 		D4DB688120FE114E000512B3 /* Day13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 				D416CEE920FCCFA600BD4D31 /* Day11ViewController.swift */,
 				D416CEEB20FCE30000BD4D31 /* Day12ViewController.swift */,
 				D4DB688120FE114E000512B3 /* Day13ViewController.swift */,
+				D4CA00CD20FEB41E00BAA39C /* Day14ViewController.swift */,
 				D46BD93F20EDFDEB00B2C176 /* Assets.xcassets */,
 				D46BD94120EDFDEB00B2C176 /* LaunchScreen.storyboard */,
 				D46BD94420EDFDEB00B2C176 /* Info.plist */,
@@ -218,10 +221,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DailyiOSAnimations/Pods-DailyiOSAnimations-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -241,6 +246,7 @@
 				D46BD93B20EDFDE900B2C176 /* ViewController.swift in Sources */,
 				D416CEEC20FCE30000BD4D31 /* Day12ViewController.swift in Sources */,
 				D472444420F65E3E001D4DEC /* Day8ViewController.swift in Sources */,
+				D4CA00CE20FEB41F00BAA39C /* Day14ViewController.swift in Sources */,
 				D4A9B18220F510F5006E8AF1 /* Day7ViewController.swift in Sources */,
 				D4DB688220FE114E000512B3 /* Day13ViewController.swift in Sources */,
 				D46BD94B20EE433B00B2C176 /* Day1ViewController.swift in Sources */,

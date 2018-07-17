@@ -8,6 +8,9 @@
 
 import UIKit
 
+// reference url
+// https://collectiveidea.com/blog/archives/2017/12/04/cabasicanimation-for-animating-strokes-plus-a-bonus-gratuitous-ui-interaction
+
 class Day12ViewController: UIViewController {
     
     override func viewDidLoad() {

@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         Model(name: "Day10", subTitle: "CGPath Animation", viewController: Day10ViewController()),
         Model(name: "Day11", subTitle: "UIBezierPath Animation", viewController: Day11ViewController()),
         Model(name: "Day12", subTitle: "CATransaction", viewController: Day12ViewController()),
+        Model(name: "Day13", subTitle: "UIDynamicAnimator(Multiple)", viewController: Day13ViewController()),
         ]
 
     override func viewDidLoad() {

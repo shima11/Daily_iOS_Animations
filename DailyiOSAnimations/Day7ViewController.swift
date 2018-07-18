@@ -10,15 +10,17 @@ import UIKit
 
 class Day7ViewController: UIViewController {
 
+    let targetView = UIView()
+
     var animator: UIDynamicAnimator!
-    var behavior: UIDynamicBehavior!
+    var behavior1: UIDynamicBehavior!
+    var behavior2: UIDynamicItemBehavior!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .white
 
-        let targetView = UIView()
         targetView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         targetView.center = view.center
         targetView.backgroundColor = .lightGray
@@ -29,8 +31,10 @@ class Day7ViewController: UIViewController {
         targetView.addGestureRecognizer(panGesture)
 
         animator = UIDynamicAnimator(referenceView: view)
-        behavior = UISnapBehavior(item: targetView, snapTo: targetView.center)
-        animator.addBehavior(behavior)
+        behavior1 = UISnapBehavior(item: targetView, snapTo: targetView.center)
+        behavior2 = UIDynamicItemBehavior(items: [targetView])
+        animator.addBehavior(behavior1)
+        animator.addBehavior(behavior2)
 
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 120, height: 30))
         label.textAlignment = .center
@@ -48,7 +52,8 @@ class Day7ViewController: UIViewController {
         case .began:
             animator.removeAllBehaviors()
         case .changed:
-            guard let targetView = sender.view, let view = sender.view?.superview else { return }
+            guard let targetView = sender.view,
+                let view = targetView.superview else { return }
             let translation = sender.translation(in: view)
 
             targetView.center = CGPoint(
@@ -58,7 +63,12 @@ class Day7ViewController: UIViewController {
             sender.setTranslation(.zero, in: view)
 
         case .cancelled, .ended, .failed:
-            animator.addBehavior(behavior)
+
+            let velocity = sender.velocity(in: view)
+            behavior2.addLinearVelocity(CGPoint(x: velocity.x * 10, y: velocity.y * 10), for: targetView)
+
+            animator.addBehavior(behavior1)
+            animator.addBehavior(behavior2)
 
         default:
             break

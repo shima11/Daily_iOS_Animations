@@ -41,10 +41,18 @@ class Day13ViewController: UIViewController {
         
         let snapBehavior = UISnapBehavior(item: targetView, snapTo: view.center)
         animator.addBehavior(snapBehavior)
-        let pushBehavior = UIPushBehavior(items: [targetView], mode: UIPushBehaviorMode.instantaneous)
+
+        let itemBehavior = UIDynamicItemBehavior(items: [targetView])
+        itemBehavior.addLinearVelocity(CGPoint(x: 1000, y: 1000), for: targetView)
+        animator.addBehavior(itemBehavior)
+
+//        let attachmentBehavior = UIAttachmentBehavior(item: targetView, attachedToAnchor: view.center)
+//        animator.addBehavior(attachmentBehavior)
+
+//        let pushBehavior = UIPushBehavior(items: [targetView], mode: UIPushBehaviorMode.instantaneous)
 //        pushBehavior.magnitude = 100
 //        pushBehavior.angle = 0.5
-        pushBehavior.pushDirection = CGVector(dx: 100, dy: 100)
-        animator.addBehavior(pushBehavior)
+//        pushBehavior.pushDirection = CGVector(dx: 100, dy: 100)
+//        animator.addBehavior(pushBehavior)
     }
 }

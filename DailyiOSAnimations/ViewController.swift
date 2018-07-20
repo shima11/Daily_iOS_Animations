@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         Model(name: "Day12", subTitle: "CATransaction", viewController: Day12ViewController()),
         Model(name: "Day13", subTitle: "UIDynamicAnimator(Multiple)", viewController: Day13ViewController()),
         Model(name: "Day14", subTitle: "Facebook pop", viewController: Day14ViewController()),
+        Model(name: "Day15", subTitle: "CATransaction", viewController: Day15ViewController()),
         ]
 
     override func viewDidLoad() {

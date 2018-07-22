@@ -42,21 +42,22 @@ class Day16ViewController: UIViewController {
             print("completion")
         }
     }
+    
 }
 
 
 final class CountUpLabel: UILabel {
 
-    var timer: CADisplayLink?
+    private var timer: CADisplayLink?
 
-    var progress: TimeInterval = 0
-    var lastUpdate: TimeInterval = 0
-    var totalTime: TimeInterval = 0
+    private var progress: TimeInterval = 0
+    private var lastUpdate: TimeInterval = 0
+    private var totalTime: TimeInterval = 0
 
-    var fromValue: CGFloat = 0
-    var toValue: CGFloat = 0
+    private var fromValue: CGFloat = 0
+    private var toValue: CGFloat = 0
 
-    var currentTime: TimeInterval {
+    private var currentTime: TimeInterval {
         if progress >= totalTime { return TimeInterval(toValue) }
         let percent = progress / totalTime
         return TimeInterval(fromValue) + percent * TimeInterval(toValue - fromValue)
@@ -81,7 +82,7 @@ final class CountUpLabel: UILabel {
         lastUpdate = Date.timeIntervalSinceReferenceDate
     }
 
-    func reset() {
+    private func reset() {
 
         timer?.invalidate()
         timer = nil
@@ -91,13 +92,17 @@ final class CountUpLabel: UILabel {
         totalTime = 0
     }
 
-    @objc func updateValue(_ timer: Timer) {
+    @objc private func updateValue(_ timer: Timer) {
 
         let now = Date.timeIntervalSinceReferenceDate
         progress += now - lastUpdate
         lastUpdate = now
 
-        print("current time(from-to):", currentTime, "progress(duration):", progress, "time since reference date:", now)
+        print(
+            "current time(from-to):", currentTime,
+            "progress(duration):", progress,
+            "time since reference date:", now
+        )
 
         if progress >= totalTime {
             completion()
@@ -105,6 +110,5 @@ final class CountUpLabel: UILabel {
         }
 
         text = String(format: "%.0f", currentTime)
-
     }
 }

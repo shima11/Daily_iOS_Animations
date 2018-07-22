@@ -26,16 +26,17 @@ class ViewController: UIViewController {
         Model(name: "Day4", subTitle: "Scale animation for UILabel", viewController: Day4ViewController()),
         Model(name: "Day5", subTitle: "CAReplicatorLayer", viewController: Day5ViewController()),
         Model(name: "Day6", subTitle: "CASpringAnimation", viewController: Day6ViewController()),
-        Model(name: "Day7", subTitle: "UIDynamicAnimator", viewController: Day7ViewController()),
+        Model(name: "Day7", subTitle: "UIDynamicAnimation1", viewController: Day7ViewController()),
         Model(name: "Day8", subTitle: "Force Touch Gesture", viewController: Day8ViewController()),
         Model(name: "Day9", subTitle: "Reverse Animation", viewController: Day9ViewController()),
         Model(name: "Day10", subTitle: "CGPath Animation", viewController: Day10ViewController()),
         Model(name: "Day11", subTitle: "UIBezierPath Animation", viewController: Day11ViewController()),
         Model(name: "Day12", subTitle: "CATransaction", viewController: Day12ViewController()),
-        Model(name: "Day13", subTitle: "UIDynamicAnimator(Multiple)", viewController: Day13ViewController()),
+        Model(name: "Day13", subTitle: "UIDynamicAnimation2", viewController: Day13ViewController()),
         Model(name: "Day14", subTitle: "Facebook pop", viewController: Day14ViewController()),
         Model(name: "Day15", subTitle: "CATransaction", viewController: Day15ViewController()),
-        Model(name: "Day16", subTitle: "CADisplaylink", viewController: Day16ViewController()),
+        Model(name: "Day16", subTitle: "CADisplaylink - UILabel count animation", viewController: Day16ViewController()),
+        Model(name: "Day17", subTitle: "", viewController: Day17ViewController()),
         ]
 
     override func viewDidLoad() {

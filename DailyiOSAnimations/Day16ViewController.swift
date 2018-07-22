@@ -8,21 +8,24 @@
 
 import UIKit
 
+// https://medium.com/ios-os-x-development/swift-3-so-i-wanted-to-animate-a-label-14dd2b332ef9
+// https://github.com/EyreFree/EFCountingLabel/blob/master/EFCountingLabel/Classes/EFCountingLabel.swift
+
 class Day16ViewController: UIViewController {
 
-    let label = CountUpLabel()
+    let countUpLabel = CountUpLabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .white
 
-        label.frame = CGRect(x: 0, y: 0, width: 120, height: 60)
-        label.textAlignment = .center
-        label.center = view.center
-        view.addSubview(label)
+        countUpLabel.frame = CGRect(x: 0, y: 0, width: 120, height: 60)
+        countUpLabel.textAlignment = .center
+        countUpLabel.center = view.center
+        view.addSubview(countUpLabel)
 
-        label.text = "count up label"
+        countUpLabel.text = "count up label"
 
         let button = UIButton()
         button.setTitle("Count Up", for: .normal)
@@ -35,12 +38,14 @@ class Day16ViewController: UIViewController {
     }
 
     @objc func tapButton(_ sender: UIControl) {
-        label.count(from: 10, to: 100, duration: 2)
+        countUpLabel.count(from: 10, to: 100, duration: 2) {
+            print("completion")
+        }
     }
 }
 
 
-class CountUpLabel: UILabel {
+final class CountUpLabel: UILabel {
 
     var timer: CADisplayLink?
 
@@ -53,21 +58,24 @@ class CountUpLabel: UILabel {
 
     var currentTime: TimeInterval {
         if progress >= totalTime { return TimeInterval(toValue) }
-        return TimeInterval(fromValue) + (progress / totalTime) * TimeInterval(toValue - fromValue)
+        let percent = progress / totalTime
+        return TimeInterval(fromValue) + percent * TimeInterval(toValue - fromValue)
     }
 
-    let completion: () -> Void = {}
+    private var completion: () -> Void = {}
 
-    func count(from: CGFloat, to: CGFloat, duration: TimeInterval) {
+    func count(from: CGFloat, to: CGFloat, duration: TimeInterval, completion: @escaping () -> Void) {
 
         reset()
 
         fromValue = from
         toValue = to
 
+        self.completion = completion
+
         timer = CADisplayLink(target: self, selector: #selector(updateValue(_:)))
         timer?.add(to: RunLoop.main, forMode: RunLoopMode.defaultRunLoopMode)
-        timer?.add(to: RunLoop.main, forMode: RunLoopMode.UITrackingRunLoopMode)
+//        timer?.add(to: RunLoop.main, forMode: RunLoopMode.UITrackingRunLoopMode) // why?
 
         totalTime = duration
         lastUpdate = Date.timeIntervalSinceReferenceDate
@@ -89,8 +97,10 @@ class CountUpLabel: UILabel {
         progress += now - lastUpdate
         lastUpdate = now
 
+        print("current time(from-to):", currentTime, "progress(duration):", progress, "time since reference date:", now)
+
         if progress >= totalTime {
-            print("completion")
+            completion()
             reset()
         }
 

@@ -30,6 +30,7 @@
 		D4FF5AA5210372EF001E163E /* Day16ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF5AA4210372EF001E163E /* Day16ViewController.swift */; };
 		D4FF5AA72104A839001E163E /* Day17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF5AA62104A839001E163E /* Day17ViewController.swift */; };
 		D4FF5AA921057D82001E163E /* Day18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF5AA821057D82001E163E /* Day18ViewController.swift */; };
+		D4FF5AAD2105A99E001E163E /* Day19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF5AAC2105A99E001E163E /* Day19ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		D4FF5AA4210372EF001E163E /* Day16ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day16ViewController.swift; sourceTree = "<group>"; };
 		D4FF5AA62104A839001E163E /* Day17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day17ViewController.swift; sourceTree = "<group>"; };
 		D4FF5AA821057D82001E163E /* Day18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day18ViewController.swift; sourceTree = "<group>"; };
+		D4FF5AAC2105A99E001E163E /* Day19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day19ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				D4FF5AA4210372EF001E163E /* Day16ViewController.swift */,
 				D4FF5AA62104A839001E163E /* Day17ViewController.swift */,
 				D4FF5AA821057D82001E163E /* Day18ViewController.swift */,
+				D4FF5AAC2105A99E001E163E /* Day19ViewController.swift */,
 				D46BD93F20EDFDEB00B2C176 /* Assets.xcassets */,
 				D46BD94120EDFDEB00B2C176 /* LaunchScreen.storyboard */,
 				D46BD94420EDFDEB00B2C176 /* Info.plist */,
@@ -233,11 +236,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DailyiOSAnimations/Pods-DailyiOSAnimations-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +276,7 @@
 				D416CEEA20FCCFA600BD4D31 /* Day11ViewController.swift in Sources */,
 				D4A9B17F20F3BD84006E8AF1 /* Day6ViewController.swift in Sources */,
 				D46643CC20EF828500714039 /* Day3ViewController.swift in Sources */,
+				D4FF5AAD2105A99E001E163E /* Day19ViewController.swift in Sources */,
 				D4FF5AA72104A839001E163E /* Day17ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,5 +9,6 @@ target 'DailyiOSAnimations' do
   # Pods for DailyiOSAnimations
   pod 'EasyPeasy'
   pod 'pop'
+  pod 'lottie-ios'
 
 end

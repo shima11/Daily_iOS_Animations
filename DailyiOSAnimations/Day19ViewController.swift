@@ -15,9 +15,9 @@ class Day19ViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .white
+
+        let animationView = LOTAnimationView(name: "engel")
         
-        let animationView = LOTAnimationView(name: "walking_arrow")
-        animationView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         animationView.center = view.center
         self.view.addSubview(animationView)
 

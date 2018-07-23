@@ -31,7 +31,7 @@
 		D4FF5AA72104A839001E163E /* Day17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF5AA62104A839001E163E /* Day17ViewController.swift */; };
 		D4FF5AA921057D82001E163E /* Day18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF5AA821057D82001E163E /* Day18ViewController.swift */; };
 		D4FF5AAD2105A99E001E163E /* Day19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF5AAC2105A99E001E163E /* Day19ViewController.swift */; };
-		D4FF5AAF2105AA6A001E163E /* walking_arrow.json in Resources */ = {isa = PBXBuildFile; fileRef = D4FF5AAE2105AA6A001E163E /* walking_arrow.json */; };
+		D4FF5AB12105AB50001E163E /* engel.json in Resources */ = {isa = PBXBuildFile; fileRef = D4FF5AB02105AB50001E163E /* engel.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +63,7 @@
 		D4FF5AA62104A839001E163E /* Day17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day17ViewController.swift; sourceTree = "<group>"; };
 		D4FF5AA821057D82001E163E /* Day18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day18ViewController.swift; sourceTree = "<group>"; };
 		D4FF5AAC2105A99E001E163E /* Day19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day19ViewController.swift; sourceTree = "<group>"; };
-		D4FF5AAE2105AA6A001E163E /* walking_arrow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = walking_arrow.json; sourceTree = "<group>"; };
+		D4FF5AB02105AB50001E163E /* engel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = engel.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 		D46BD93720EDFDE900B2C176 /* DailyiOSAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				D4FF5AAE2105AA6A001E163E /* walking_arrow.json */,
+				D4FF5AB02105AB50001E163E /* engel.json */,
 				D46BD93820EDFDE900B2C176 /* AppDelegate.swift */,
 				D46BD93A20EDFDE900B2C176 /* ViewController.swift */,
 				D46BD94A20EE433B00B2C176 /* Day1ViewController.swift */,
@@ -206,8 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D46BD94320EDFDEB00B2C176 /* LaunchScreen.storyboard in Resources */,
+				D4FF5AB12105AB50001E163E /* engel.json in Resources */,
 				D46BD94020EDFDEB00B2C176 /* Assets.xcassets in Resources */,
-				D4FF5AAF2105AA6A001E163E /* walking_arrow.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

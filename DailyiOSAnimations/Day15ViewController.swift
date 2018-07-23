@@ -20,13 +20,13 @@ class Day15ViewController: UIViewController {
         view.addSubview(targetView)
 
         CATransaction.begin()
+        CATransaction.setAnimationDuration(2)
         CATransaction.setCompletionBlock({
             print("completion")
         })
 
         let animation = CABasicAnimation(keyPath: "transform.scale")
         animation.toValue = 2
-        animation.duration = 2
         animation.autoreverses = true
         targetView.layer.add(animation, forKey: nil)
         

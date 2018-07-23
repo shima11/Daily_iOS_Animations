@@ -38,6 +38,7 @@ class ViewController: UIViewController {
         Model(name: "Day16", subTitle: "CADisplaylink - UILabel count animation", viewController: Day16ViewController()),
         Model(name: "Day17", subTitle: "CAEmitterLayer", viewController: Day17ViewController()),
         Model(name: "Day18", subTitle: "PresentationController", viewController: Day18ViewController()),
+        Model(name: "Day19", subTitle: "Lottie", viewController: Day19ViewController()),
         ]
 
     override func viewDidLoad() {

@@ -112,3 +112,94 @@ final class CountUpLabel: UILabel {
         text = String(format: "%.0f", currentTime)
     }
 }
+
+
+// TODO: WIP
+
+//private final class CountUpLabel: UILabel {
+//
+//    private var timer: CADisplayLink?
+//
+//    private var progress: TimeInterval = 0
+//    private var lastUpdate: TimeInterval = 0
+//    private var totalTime: TimeInterval = 0
+//
+//    private var fromValue: CGFloat = 0
+//    private var toValue: CGFloat = 0
+//
+//    private func update(_ t: CGFloat) -> CGFloat {
+//        let newt: CGFloat = 2 * t
+//        if newt < 1 {
+//            return CGFloat(0.5 * powf (Float(newt), 3))
+//        } else {
+//            return CGFloat(0.5 * (2.0 - powf(Float(2.0 - newt), 3)))
+//        }
+//    }
+//
+//    private var currentTime: TimeInterval {
+//        if progress >= totalTime { return TimeInterval(toValue) }
+//        let percent = progress / totalTime
+//        return TimeInterval(fromValue + update(CGFloat(percent)) * (toValue - fromValue))
+//    }
+//
+//    private var completion: (() -> Void)?
+//
+//    private let textAttributes: TextAttributes
+//
+//    init(textAttributes: TextAttributes) {
+//        self.textAttributes = textAttributes
+//        super.init(frame: .zero)
+//    }
+//
+//    required init?(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+//
+//    func apply(text: String) {
+//
+//        attributedText = text.attributed(
+//            textAttributes
+//        )
+//    }
+//
+//    func count(from: CGFloat, to: CGFloat, duration: TimeInterval, completion: (() -> Void)? ) {
+//
+//        reset()
+//
+//        fromValue = from
+//        toValue = to
+//        totalTime = duration
+//        lastUpdate = Date.timeIntervalSinceReferenceDate
+//
+//        self.completion = completion
+//
+//        timer = CADisplayLink(target: self, selector: #selector(updateValue(_:)))
+//        timer?.add(to: RunLoop.main, forMode: RunLoopMode.defaultRunLoopMode)
+//
+//    }
+//
+//    @objc private func updateValue(_ timer: Timer) {
+//
+//        let now = Date.timeIntervalSinceReferenceDate
+//        progress += now - lastUpdate
+//        lastUpdate = now
+//
+//        if progress >= totalTime {
+//            completion?()
+//            reset()
+//        }
+//
+//        attributedText = String(format: "%.0f", currentTime).attributed(textAttributes)
+//    }
+//
+//    private func reset() {
+//
+//        timer?.invalidate()
+//        timer = nil
+//
+//        progress = 0
+//        lastUpdate = 0
+//        totalTime = 0
+//    }
+//
+//}

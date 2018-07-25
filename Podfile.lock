@@ -1,24 +1,28 @@
 PODS:
   - EasyPeasy (1.7.0)
   - lottie-ios (2.5.0)
+  - LTMorphingLabel (0.5.6)
   - pop (1.0.10)
 
 DEPENDENCIES:
   - EasyPeasy
   - lottie-ios
+  - LTMorphingLabel
   - pop
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - EasyPeasy
     - lottie-ios
+    - LTMorphingLabel
     - pop
 
 SPEC CHECKSUMS:
   EasyPeasy: 2f2785ed78c6f9e9045221f2ff317730e7321bff
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  LTMorphingLabel: bdb51d4682e9822da89da6f567bd8aa456fd6650
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
 
-PODFILE CHECKSUM: bb6c1a931e87acd97ed3b125aa08db88971b953c
+PODFILE CHECKSUM: ec1cf62f1b12741f96680009e8411265f3d8a24b
 
 COCOAPODS: 1.5.3

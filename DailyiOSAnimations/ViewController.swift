@@ -39,6 +39,7 @@ class ViewController: UIViewController {
         Model(name: "Day17", subTitle: "CAEmitterLayer", viewController: Day17ViewController()),
         Model(name: "Day18", subTitle: "PresentationController", viewController: Day18ViewController()),
         Model(name: "Day19", subTitle: "Lottie", viewController: Day19ViewController()),
+        Model(name: "Day20", subTitle: "Lottie", viewController: Day20ViewController()),
         ]
 
     override func viewDidLoad() {

@@ -10,5 +10,6 @@ target 'DailyiOSAnimations' do
   pod 'EasyPeasy'
   pod 'pop'
   pod 'lottie-ios'
+  pod 'LTMorphingLabel'
 
 end

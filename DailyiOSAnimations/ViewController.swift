@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         Model(name: "Day9", subTitle: "Reverse Animation", viewController: Day9ViewController()),
         Model(name: "Day10", subTitle: "CGPath Animation", viewController: Day10ViewController()),
         Model(name: "Day11", subTitle: "UIBezierPath Animation", viewController: Day11ViewController()),
-        Model(name: "Day12", subTitle: "CATransaction", viewController: Day12ViewController()),
+        Model(name: "Day12", subTitle: "Flash Animation", viewController: Day12ViewController()),
         Model(name: "Day13", subTitle: "UIDynamicAnimation2", viewController: Day13ViewController()),
         Model(name: "Day14", subTitle: "Facebook pop", viewController: Day14ViewController()),
         Model(name: "Day15", subTitle: "CATransaction", viewController: Day15ViewController()),
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         Model(name: "Day17", subTitle: "CAEmitterLayer", viewController: Day17ViewController()),
         Model(name: "Day18", subTitle: "PresentationController", viewController: Day18ViewController()),
         Model(name: "Day19", subTitle: "Lottie", viewController: Day19ViewController()),
-        Model(name: "Day20", subTitle: "Lottie", viewController: Day20ViewController()),
+        Model(name: "Day20", subTitle: "LTMorphingLabel", viewController: Day20ViewController()),
         ]
 
     override func viewDidLoad() {

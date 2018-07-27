@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         Model(name: "Day18", subTitle: "PresentationController", viewController: Day18ViewController()),
         Model(name: "Day19", subTitle: "Lottie", viewController: Day19ViewController()),
         Model(name: "Day20", subTitle: "LTMorphingLabel", viewController: Day20ViewController()),
+        Model(name: "Day21", subTitle: "UILabel Count Animation", viewController: Day21ViewController()),
         ]
 
     override func viewDidLoad() {

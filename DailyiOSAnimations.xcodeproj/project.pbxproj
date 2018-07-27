@@ -34,7 +34,6 @@
 		D4FF5AA921057D82001E163E /* Day18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF5AA821057D82001E163E /* Day18ViewController.swift */; };
 		D4FF5AAD2105A99E001E163E /* Day19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF5AAC2105A99E001E163E /* Day19ViewController.swift */; };
 		D4FF5AB12105AB50001E163E /* engel.json in Resources */ = {isa = PBXBuildFile; fileRef = D4FF5AB02105AB50001E163E /* engel.json */; };
-		D4FF5AB72107280D001E163E /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D4FF5AB62107280D001E163E /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +68,6 @@
 		D4FF5AA821057D82001E163E /* Day18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day18ViewController.swift; sourceTree = "<group>"; };
 		D4FF5AAC2105A99E001E163E /* Day19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day19ViewController.swift; sourceTree = "<group>"; };
 		D4FF5AB02105AB50001E163E /* engel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = engel.json; sourceTree = "<group>"; };
-		D4FF5AB62107280D001E163E /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../../../../../../Downloads/data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				D4FF5AB02105AB50001E163E /* engel.json */,
-				D4FF5AB62107280D001E163E /* data.json */,
 				D46BD93820EDFDE900B2C176 /* AppDelegate.swift */,
 				D46BD93A20EDFDE900B2C176 /* ViewController.swift */,
 				D46BD94A20EE433B00B2C176 /* Day1ViewController.swift */,
@@ -217,7 +214,6 @@
 				D46BD94320EDFDEB00B2C176 /* LaunchScreen.storyboard in Resources */,
 				D4FF5AB12105AB50001E163E /* engel.json in Resources */,
 				D46BD94020EDFDEB00B2C176 /* Assets.xcassets in Resources */,
-				D4FF5AB72107280D001E163E /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

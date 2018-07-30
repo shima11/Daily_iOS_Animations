@@ -41,6 +41,7 @@ class ViewController: UIViewController {
         Model(name: "Day19", subTitle: "Lottie", viewController: Day19ViewController()),
         Model(name: "Day20", subTitle: "LTMorphingLabel", viewController: Day20ViewController()),
         Model(name: "Day21", subTitle: "UILabel Count Animation", viewController: Day21ViewController()),
+        Model(name: "Day22", subTitle: "CAShapeLayer Animation", viewController: Day22ViewController()),
         ]
 
     override func viewDidLoad() {

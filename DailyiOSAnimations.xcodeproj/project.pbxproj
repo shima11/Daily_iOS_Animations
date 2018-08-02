@@ -29,6 +29,7 @@
 		D4A9B1AE20F75624006E8AF1 /* Day9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A9B1AD20F75624006E8AF1 /* Day9ViewController.swift */; };
 		D4CA00CE20FEB41F00BAA39C /* Day14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA00CD20FEB41E00BAA39C /* Day14ViewController.swift */; };
 		D4DB688220FE114E000512B3 /* Day13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB688120FE114E000512B3 /* Day13ViewController.swift */; };
+		D4EC21A8211304AE000023F8 /* Day23ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EC21A7211304AE000023F8 /* Day23ViewController.swift */; };
 		D4FEA958210F65D70091A6BE /* Day22ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FEA957210F65D70091A6BE /* Day22ViewController.swift */; };
 		D4FF5AA5210372EF001E163E /* Day16ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF5AA4210372EF001E163E /* Day16ViewController.swift */; };
 		D4FF5AA72104A839001E163E /* Day17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF5AA62104A839001E163E /* Day17ViewController.swift */; };
@@ -64,6 +65,7 @@
 		D4A9B1AD20F75624006E8AF1 /* Day9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day9ViewController.swift; sourceTree = "<group>"; };
 		D4CA00CD20FEB41E00BAA39C /* Day14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14ViewController.swift; sourceTree = "<group>"; };
 		D4DB688120FE114E000512B3 /* Day13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13ViewController.swift; sourceTree = "<group>"; };
+		D4EC21A7211304AE000023F8 /* Day23ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day23ViewController.swift; sourceTree = "<group>"; };
 		D4FEA957210F65D70091A6BE /* Day22ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day22ViewController.swift; sourceTree = "<group>"; };
 		D4FF5AA4210372EF001E163E /* Day16ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day16ViewController.swift; sourceTree = "<group>"; };
 		D4FF5AA62104A839001E163E /* Day17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day17ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				D495A66421081EBE00AE9F62 /* Day20ViewController.swift */,
 				D495A6662108ADF800AE9F62 /* Day21ViewController.swift */,
 				D4FEA957210F65D70091A6BE /* Day22ViewController.swift */,
+				D4EC21A7211304AE000023F8 /* Day23ViewController.swift */,
 				D46BD93F20EDFDEB00B2C176 /* Assets.xcassets */,
 				D46BD94120EDFDEB00B2C176 /* LaunchScreen.storyboard */,
 				D46BD94420EDFDEB00B2C176 /* Info.plist */,
@@ -279,6 +282,7 @@
 				D43C4F4B20F8C7ED009A3C05 /* Day10ViewController.swift in Sources */,
 				D46BD93B20EDFDE900B2C176 /* ViewController.swift in Sources */,
 				D416CEEC20FCE30000BD4D31 /* Day12ViewController.swift in Sources */,
+				D4EC21A8211304AE000023F8 /* Day23ViewController.swift in Sources */,
 				D495A66521081EBE00AE9F62 /* Day20ViewController.swift in Sources */,
 				D472444420F65E3E001D4DEC /* Day8ViewController.swift in Sources */,
 				D4CA00CE20FEB41F00BAA39C /* Day14ViewController.swift in Sources */,

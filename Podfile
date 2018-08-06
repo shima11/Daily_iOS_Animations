@@ -11,5 +11,6 @@ target 'DailyiOSAnimations' do
   pod 'pop'
   pod 'lottie-ios'
   pod 'LTMorphingLabel'
+  pod 'Reveal-SDK'
 
 end

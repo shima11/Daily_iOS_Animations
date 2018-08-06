@@ -8,16 +8,23 @@
 
 import UIKit
 
+class CustomWindow: UIWindow {
+    override func sendEvent(_ event: UIEvent) {
+        print("😎", event)
+        super.sendEvent(event)
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    var window: CustomWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-        window = UIWindow(frame: UIScreen.main.bounds)
+        window = CustomWindow(frame: UIScreen.main.bounds)
         let viewController = ViewController()
         let backButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         viewController.navigationItem.backBarButtonItem = backButton
@@ -49,7 +56,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

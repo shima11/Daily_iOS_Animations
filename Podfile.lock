@@ -1,9 +1,9 @@
 PODS:
   - EasyPeasy (1.7.0)
   - lottie-ios (2.5.0)
-  - LTMorphingLabel (0.5.6)
+  - LTMorphingLabel (0.5.7)
   - pop (1.0.10)
-  - Reveal-SDK (16)
+  - Reveal-SDK (17)
 
 DEPENDENCIES:
   - EasyPeasy
@@ -23,9 +23,9 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   EasyPeasy: 2f2785ed78c6f9e9045221f2ff317730e7321bff
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
-  LTMorphingLabel: bdb51d4682e9822da89da6f567bd8aa456fd6650
+  LTMorphingLabel: 9d1c38bd602fe505f264d3e9fdb780995142f275
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
-  Reveal-SDK: ed36bdbb3cbf90b94ae5da0dbcb3c7ae6738c51f
+  Reveal-SDK: a6df49f47319bd19a110c960c498af32df72c0af
 
 PODFILE CHECKSUM: 497c6feefbdbcf36aae6c8ce0503404d337a6159
 

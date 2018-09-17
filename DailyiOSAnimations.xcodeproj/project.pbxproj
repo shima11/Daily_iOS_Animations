@@ -175,6 +175,7 @@
 				D46BD93220EDFDE900B2C176 /* Frameworks */,
 				D46BD93320EDFDE900B2C176 /* Resources */,
 				B73A9CA671923DEC07BAFA3F /* [CP] Embed Pods Frameworks */,
+				D49D8FEE214E303E000B4C25 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -275,6 +276,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DailyiOSAnimations/Pods-DailyiOSAnimations-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D49D8FEE214E303E000B4C25 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild -showBuildSettings\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

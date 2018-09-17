@@ -59,8 +59,8 @@ class Day4ViewController: UIViewController {
                 withDuration: 0.6,
                 delay: 0,
                 options: [
-                    UIViewAnimationOptions.curveEaseInOut,
-                    UIViewAnimationOptions.allowUserInteraction,
+                    .curveEaseInOut,
+                    .allowUserInteraction,
                 ],
                 animations: {
                     label.transform = transform
@@ -87,8 +87,8 @@ class Day4ViewController: UIViewController {
                 withDuration: 0.6,
                 delay: 0,
                 options: [
-                    UIViewAnimationOptions.curveEaseInOut,
-                    UIViewAnimationOptions.allowUserInteraction,
+                    .curveEaseInOut,
+                    .allowUserInteraction,
                 ],
                 animations: {
                     label.transform = transform

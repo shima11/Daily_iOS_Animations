@@ -35,8 +35,8 @@ class Day2ViewController: UIViewController {
 
         button.frame = CGRect(x: 0, y: 0, width: 80, height: 60)
         button.center = CGPoint(x: view.center.x, y: view.center.y + 250)
-        button.titleLabel?.text = "Resume"
-        button.backgroundColor = UIColor.lightGray
+        button.setTitle("Resume", for: .normal)
+        button.setTitleColor(.darkGray, for: .normal)
         button.addTarget(self, action: #selector(self.tapButton(_:)), for: .touchUpInside)
         view.addSubview(button)
 
